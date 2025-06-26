@@ -21,7 +21,6 @@ namespace_imports = [
 		"device/xiaomi/sm8150-common",
 		"hardware/qcom-caf/sm8150",
 		"hardware/qcom-caf/wlan",
-	    "hardware/qcom/sm8150/gps",
 		"hardware/xiaomi",
 		"vendor/qcom/opensource/commonsys-intf/display",
 		"vendor/qcom/opensource/commonsys/display",

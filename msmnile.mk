@@ -303,8 +303,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client \
-    hardware/qcom/sm8150/gps
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Public libraries
 PRODUCT_COPY_FILES += \
