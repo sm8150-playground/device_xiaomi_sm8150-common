@@ -308,12 +308,13 @@ vendor/lib64/vendor.qti.gnss@3.0.so|1c0b41eddcc4789e1ea842be02d511afad123a8e
 vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
 
-# GNSS configs
-vendor/etc/apdr.conf
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
-vendor/etc/xtwifi.conf
+# GNSS configs - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
+vendor/etc/gnss_antenna_info.conf|4f436d32bf096bd9251602e08c64e357ee709bad
+vendor/etc/izat.conf|c60fabc264a477e23a36018419271bab2de0a0f6
+vendor/etc/lowi.conf|2045e83483849a124e5fef052b59190f1b784df0
+vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
 # HotwordEnrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
