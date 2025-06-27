@@ -1,0 +1,14 @@
+# All unpinned blobs below are extracted from nabu_in-user 13 RKQ1.200826.002 V816.0.18.0.TKXINXM release-keys
+
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+
+# Soter
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so

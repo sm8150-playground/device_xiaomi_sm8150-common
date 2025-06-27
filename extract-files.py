@@ -82,6 +82,10 @@ module.add_proprietary_file('proprietary-files-phone.txt').add_copy_files_guard(
     'TARGET_IS_TABLET', 'true', invert=True
 )
 
+module.add_proprietary_file('proprietary-files-china.txt').add_copy_files_guard(
+    'TARGET_NOT_IN_CHINA', 'true', invert=True
+)
+
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
     utils.run()
