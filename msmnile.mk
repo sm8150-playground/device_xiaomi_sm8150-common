@@ -364,11 +364,7 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    xiaomi-telephony-stub
-
-PRODUCT_BOOT_JARS += \
-    xiaomi-telephony-stub
+    qti_telephony_utils.xml
 
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
