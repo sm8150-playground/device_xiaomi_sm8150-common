@@ -315,6 +315,10 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
+# QTI Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    alarm
+
 # RIL
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
