@@ -324,7 +324,8 @@ TARGET_BOARD_PLATFORM := msmnile
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
-    alarm
+    alarm \
+    telephony
 
 # RIL
 ifneq ($(TARGET_IS_TABLET),true)
@@ -375,12 +376,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    xiaomi-telephony-stub
-
-PRODUCT_BOOT_JARS += \
-    xiaomi-telephony-stub
-
+    qti_telephony_utils.xml
+    
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
 
