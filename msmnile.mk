@@ -388,6 +388,10 @@ OVERRIDE_ENABLE_UFFD_GC := false
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.dual_role_usb
 
+# Sec Config
+PRODUCT_PACKAGES += \
+    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager

@@ -444,7 +444,6 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system/etc/permissions/privapp-permissions-qti.xml
 system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
-vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
