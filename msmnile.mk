@@ -206,13 +206,11 @@ PRODUCT_PACKAGES += \
      libloc_core \
      libgnss
 
-
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 endif
-
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
@@ -318,13 +316,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
-
-# QTI Components
-TARGET_COMMON_QTI_COMPONENTS := \
-    alarm
 
 # RIL
 ifneq ($(TARGET_IS_TABLET),true)
