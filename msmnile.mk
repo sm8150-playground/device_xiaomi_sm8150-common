@@ -258,6 +258,10 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
+# Live Display
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.xiaomi_sm8150
+
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
@@ -282,6 +286,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayCommon \
     NcmTetheringOverlay \
     FrameworkResOverlayCommon \
+    LineageDialerOverlayCommon \
+    LineageSDKOverlayCommon \
     SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
     SystemUIOverlayCommon \
@@ -315,9 +321,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Platform
-TARGET_BOARD_PLATFORM := msmnile
 
 # RIL
 ifneq ($(TARGET_IS_TABLET),true)
@@ -369,9 +372,11 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
+    telephony-ext \
     xiaomi-telephony-stub
 
 PRODUCT_BOOT_JARS += \
+    telephony-ext \
     xiaomi-telephony-stub
 
 # UFFD GC
